@@ -1,0 +1,212 @@
+/* Reset Margin and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 10; /* Ensure the body takes at least the full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative; /* Avoid absolute positioning */
+}
+
+header .logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Tomato color */
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    flex-grow: 1; /* Ensures the main content area takes up the remaining space */
+}
+
+.main-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e5533d;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Footer Container */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 0.9rem;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.footer-section a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #1e90ff;
+}
+
+/* Social Links */
+.social-links a {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #1e90ff;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section p, .footer-section a {
+        font-size: 0.8rem;
+    }
+
+    .footer-bottom {
+        padding-top: 10px;
+    }
+}
