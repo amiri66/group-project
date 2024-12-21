@@ -1,104 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nike - Just Do It</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-
-<header>
-    <div class="logo">
-        <h1>Amiri</h1>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<nav>
-    <div></div>    
-    <a href="hats.html">Hats</a>
-    <a href="backpack.html">Backpack</a>
-   
-    <a href="shoes.html">Shoes</a>
-    <a href="hoodies.html">hoodies</a>
-</nav>
-<section class="main-content">
-    <h2>Welcome to Amiri!</h2>
-    <h3>Here you can find your clothing of AMIRI!</h3>
-    <img src="https://www.brandcolorcode.com/images/color-palette/amiri.png" width="800pxs">
-
-    <div class="product__info-container no-scrollbar container flex--one-half product-item--sticky">
-        <div id="ProductInfo-template--16630832955457__main" class="product__info container"><div class="sticky-scroll-here"></div><div class="product__block-container product__block-no-padding">
-                  <div class="product__info-subdetails flex flex--column jcc aic body-1">          
-
-      <div class="product__info-subdetails-price-color flex jcc aic">
-    <div id="price-template--16630832955457__main" class="price flex aic flex--wrap flex--gap" style="--flex-gap: 0 .5rem"><span class="price-item price-item--regular" aria-label="Regular price">$ 430 USD</span><button>Buy</button>
-    <div class="price__unit-price">
-          <small hidden="" aria-hidden="true">
-            <span class="visually-hidden">Unit price</span>
-            <span>
-              <span></span>
-              <span aria-hidden="true">/</span>
-              <span class="visually-hidden">&nbsp;per&nbsp;</span>
-              <span>
-              </span>
-            </span>
-          </small>
-        </div></div>
-      </div>
-</section>
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h4>About Us</h4>
-            <p>We are a leading company in providing innovative solutions and services. Our mission is to empower businesses worldwide with cutting-edge technology and unmatched customer support.</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Nike</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    </header>
 
-        <div class="footer-section">
-            <h4>Follow Us</h4>
-            <div class="social-links">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="https://www.instagram.com/end.mehmeti/?next=%2F" target="_blank">Instagram</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Just Do It</h1>
+            <p>Empower your game with Nike's latest collection.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/400x400" alt="Product 1">
+                    <h3>Air Max 2024</h3>
+                    <p>Unbeatable comfort and style.</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/400x400" alt="Product 2">
+                    <h3>ZoomX Superfly</h3>
+                    <p>Speed meets innovation.</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/400x400" alt="Product 3">
+                    <h3>React Infinity</h3>
+                    <p>Endless comfort for every step.</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="footer-section">
-            <h4>Contact Info</h4>
-            <p>Email: info@yourcompany.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: 123 Business Rd, City, Country</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Nike</h2>
+            <p>For over 50 years, Nike has been inspiring athletes around the world with innovative products designed to help them achieve greatness. From footwear to apparel, our mission is to provide the highest-quality products for all athletes.</p>
         </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Get in touch with us, and we’ll help you with anything you need.</p>
+            <a href="mailto:support@nike.com" class="btn">Email Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Footer Column 1: Company Info -->
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Footer Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+    
+            <!-- Footer Column 3: Newsletter Subscription -->
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+    
+            <!-- Footer Column 4: Social Media Links -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="https://i.pinimg.com/736x/84/68/5b/84685ba9637a951591040426a46da70f.jpg" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#" class="social-icon"><img src="https://i.pinimg.com/originals/e5/d3/76/e5d376b99ef839fe38135eb1ffc68189.jpg" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    
         <div class="footer-bottom">
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a> |
-                <a href="#terms">Terms of Service</a> |
-                <a href="#sitemap">Sitemap</a>
-            </div>
+            <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
         </div>
-    </div>
-</footer>
+    </footer>
+    
+    <script src="scripts.js"></script>
 </body>
+
 </html>
